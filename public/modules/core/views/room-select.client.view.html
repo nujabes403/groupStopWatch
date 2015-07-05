@@ -1,0 +1,11 @@
+<section data-ng-controller="roomSelectController">
+    <div layout="column">
+        <md-content layout-padding layout="row" layout-sm="column">
+            <md-input-container>
+                <label>방 번호를 입력해주세요!</label>
+                <input type="number" ng-model="roomNumber">
+            </md-input-container>
+            <md-button ng-click="joinRoom(roomNumber)" class="md-raised md-primary">들어가기</md-button>
+        </md-content>
+    </div>
+</section>

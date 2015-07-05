@@ -1,0 +1,27 @@
+<section data-ng-controller="roomController">
+	<div class="well">
+            <h3>{{roomNum}}번 방 입니다.</h3>
+        <a ui-sref="room-select"><md-button class="md-raised md-warn">방 나가기</md-button></a>
+    </div>
+
+    <h4>{{username}} 님 안녕하세요!</h4>
+
+    <div class="row">
+        <!--user1-->
+        <div class="user">
+            <div class="page-header">
+                <h3>User1</h3>
+            </div>
+            <ul ng-repeat="user in users">
+                <li><h2 ng-click="watchToggle()"><i class="fa fa-clock-o"></i> 총 공부 시간 : {{timer.time}}</h2></li>
+                <li><h5><i class="fa fa-user"></i> {{user.username}}</h5></li>
+                <li><h5><i class="fa fa-user"></i> {{user.role}}</h5></li>
+                <li><h5><i class="fa fa-plug"></i> {{user.working}}</h5></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="well">
+        For test : {{timer.time}}
+    </div>
+</section>
