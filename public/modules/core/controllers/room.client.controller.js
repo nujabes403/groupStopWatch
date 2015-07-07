@@ -99,6 +99,9 @@ angular.module('core').controller('roomController', ['$scope','$stateParams','$i
                     for(var i = 0 ; i < snapshot.numChildren() ; i++){
                         $scope.users[i] = snapshot.val()['user'+i];
                     }
+                        if(!$scope.$$phase){
+                            $scope.$apply();
+                        }
                 });
                 });
 
@@ -121,6 +124,9 @@ angular.module('core').controller('roomController', ['$scope','$stateParams','$i
                     $interval.cancel(runTimer);
                     runTimer = false;
                     $scope.timerStatus = false;
+            }
+            $scope.update = function(){
+                console.log("Update!");
             }
         };
 	}
