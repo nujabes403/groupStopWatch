@@ -16,7 +16,8 @@ module.exports = {
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
                 'public/lib/angular-material/angular-material.css',
-                'public/lib/font-awesome/css/font-awesome.min.css'
+                'public/lib/font-awesome/css/font-awesome.min.css',
+                'public/lib/material-design-lite/material.min.css'
 			],
 			js: [
 				'public/lib/angular/angular.js',
@@ -31,7 +32,8 @@ module.exports = {
                 'public/lib/angular-aria/angular-aria.min.js',
                 'public/lib/angular-material/angular-material.js',
                 'public/lib/angularfire/dist/angularfire.min.js',
-                'public/lib/firebase/firebase.js'
+                'public/lib/firebase/firebase.js',
+                'public/lib/material-design-lite/material.min.js'
 			]
 		},
 		css: [

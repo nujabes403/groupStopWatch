@@ -13,3 +13,17 @@
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+.h1 .h2 .h3 .h4 .h5 .h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.mdl-card__title-text{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.user-card{
+    font-family: 'Roboto Condensed', sans-serif;
+    background:#5bc0de;
+}
+.user-card-action{
+ background: #424242;
+    font-family: 'Roboto Condensed', sans-serif;
+}

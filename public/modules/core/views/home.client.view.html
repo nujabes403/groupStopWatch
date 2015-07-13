@@ -1,9 +1,9 @@
 <section data-ng-controller="HomeController">
     <div class="well">
-        <div class="jumbotron">
-            <h1>실시간 그룹 스탑워치 앱</h1>
+        <div layout="column" layout-align="center center">
+            <h1 class="md-display-3">그룹 스탑워치</h1>
+            <a ui-sref="room-select"><button class="mdl-button mdl-js-button mdl-button--fab mdl-button--raised mdl-button--colored"><i class="material-icons">home</i></button></a>
         </div>
-        <h2><a ui-sref="room-select">방 선택 화면으로...</a></h2>
     </div>
     <div ui-view></div>
 </section>

@@ -1,27 +1,27 @@
 <section data-ng-controller="roomController">
 	<div class="well">
-            <h3>{{roomNum}}번 방 입니다.</h3>
-        <a ui-sref="room-select"><md-button class="md-raised md-warn">방 나가기</md-button></a>
+            <h3>{{roomNum}} 방 입니다.</h3>
+        <a ui-sref="room-select"><md-button class="md-raised md-warngrunt">방 나가기</md-button></a>
     </div>
-
-    <h4>{{username}} 님 안녕하세요!</h4>
-
     <div class="row">
         <!--user1-->
         <div class="user">
             <div class="page-header">
                 <h3>User Table</h3>
             </div>
-            <h2 ng-click="watchToggle()" ng-hide="timerStatus"><i class="fa fa-clock-o"></i>공부 시작</h2><h2 ng-click="watchToggle()" ng-show="timerStatus"><i class="fa fa-clock-o"></i>공부 중지</h2>
-            <div class="row">
-            <ul ng-repeat="user in users">
-                <div class="well col-md-6">
-                <li><h5><i class="fa fa-user"></i> {{user.username}}</h5></li>
-                <li><h5><i class="fa fa-user"></i> {{user.role}}</h5></li>
-                <li><h5><i class="fa fa-plug"></i> {{user.working}}</h5></li>
-                <li><h5><i class="fa fa-plug"></i> {{user.time.time}}</h5></li>
+                <ul ng-repeat="user in users">
+                <div class="mdl-card mdl-shadow--2dp user-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><i class="material-icons">accessibility</i> {{user.username}}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <i class="material-icons">work</i> {{user.working}}
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border user-card-action">
+                        <button ng-click="watchToggle()" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect"><i class="material-icons">alarm</i></button> {{user.time.time}}
+                    </div>
                 </div>
-            </ul>
+                </ul>
             </div>
         </div>
     </div>
